@@ -84,7 +84,7 @@ module.exports.reviewDeleteOne = (req,res)=>{
     .then(reviewData =>{
        debug("Review ID " + req.params.reviewid + " deleted")
        debug(reviewData)
-      //sendJSONresponse(res,204, null)
+        sendJSONresponse(res,204, null)
     }).catch(err=>{
         sendJSONresponse(res, 400, err)
     })
